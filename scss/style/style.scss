@@ -1,0 +1,106 @@
+@use "../reset/reset.scss";
+
+$font-logo: "Roboto", serif;
+$font-main: "Source Sans 3", serif;
+
+.container {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* header */
+
+.header {
+    background-color: #fff;
+}
+
+.header__inner {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header__logo {
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+        img {
+            display: block;
+        }
+        h2 {
+            font-family: $font-logo;
+            font-weight: 700;
+            font-size: 20px;
+            color: #000;
+        }
+    }
+
+    .nav {
+        display: flex;
+        gap: 0 50px;
+        a {
+            color: #000;
+            font-family: $font-main;
+            font-weight: 700;
+            font-size: 16px;
+            position: relative;
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                right: 0;
+                bottom: -3px;
+                width: 0;
+                height: 2px; 
+                background-color: #000; 
+                transition: width 0.5s;
+            }
+            &:hover::after {
+                content: "";
+                width: 100%;
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: -3px;
+                height: 2px; 
+                background-color: #000;
+                transition: width 0.5s;  
+            }
+        }
+        
+    }
+
+    .burger {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .header__inner {
+        .nav {
+            display: none;
+            a {
+                font-size: 25px;
+            }
+        }
+        .nav__active {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px 0;
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 50vw;
+            background-color: #fff;
+            box-shadow: 0px 0px 200px #000;
+            text-align: center;
+        }
+        .burger {
+            z-index: 5;
+            display: block;
+        }
+    }   
+}
+

@@ -1,0 +1,63 @@
+@use "style/style.scss";
+
+/* blog */
+$font-logo: "Roboto", serif;
+$font-main: "Source Sans 3", serif;
+
+.blog {
+    height: 490px;
+    max-width: 1100px;
+    background-image: url("../img/bg/blog.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 0 auto;
+    font-family: $font-main;
+
+    .container {
+        height: 100%;
+    }
+
+    .blog__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 100%;
+        gap: 20px 0;
+        color: #fff;
+
+        h2 {
+            font-size: 16px;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+        p {
+            max-width: 620px;
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .blog {
+        height: 300px;
+        background-position: center;
+        object-fit: cover;
+        .blog__inner {
+            h2 {
+                font-size: 13px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
