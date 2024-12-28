@@ -4,9 +4,19 @@ $font-logo: "Roboto", serif;
 $font-main: "Source Sans 3", serif;
 
 .container {
-    max-width: 970px;
+    max-width: 980px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.active__item {
+    border-bottom: 2px solid #000;
+    cursor: not-allowed;
+    color: #000;
+    font-family: $font-main;
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
 }
 
 /* header */

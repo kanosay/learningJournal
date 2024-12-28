@@ -175,68 +175,75 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
   }
 }
-.main {
-  background-color: #FAFAFA;
-  padding-top: 70px;
+.about {
+  padding-top: 80px;
+  background-color: #fafafa;
   font-family: "Source Sans 3", serif;
 }
-.main .first__module {
-  max-width: 850px;
-  margin: 0 auto;
-}
-.main .first__module h2,
-.main .first__module p {
-  font-size: 16px;
-}
-.main .first__module h1 {
-  font-size: 36px;
-  font-weight: 700;
-  padding: 35px 0;
-}
-.main .first__module p {
+.about .about__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-bottom: 35px;
 }
-.main .img__module {
+.about .about__inner .about__img {
   display: block;
-  width: 100%;
+  width: 182px;
+  height: 182px;
+  border-radius: 50%;
+  object-fit: cover;
 }
-.main .text__module {
+.about .about__inner .about__title {
+  max-width: 770px;
+}
+.about .about__inner .about__title h1 {
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+.about .about__inner .about__title p {
+  font-size: 16px;
+}
+.about .about__text {
   max-width: 850px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 25px;
 }
-.main .text__module h2 {
-  font-size: 24px;
+.about .about__text h2 {
+  padding-bottom: 25px;
   font-weight: 700;
-  padding-bottom: 20px;
+  font-size: 20px;
 }
-.main .text__module p {
-  font-size: 18px;
+.about .about__text p {
   padding-bottom: 20px;
+  font-size: 16px;
 }
-.main .text__module p:last-child {
-  padding-bottom: 80px;
+.about .about__text p:last-child {
+  padding-bottom: 55px;
 }
 
 @media only screen and (max-width: 450px) {
-  .main {
-    background-color: #fff;
+  .about {
     padding-top: 30px;
   }
-  .main .first__module h2 {
-    font-size: 12px;
+  .about .about__inner {
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: flex-start;
+    padding-bottom: 30px;
   }
-  .main .first__module h1 {
-    font-size: 32px;
-    padding: 20px 0;
+  .about .about__inner .about__title h1 {
+    padding: 15px 0;
   }
-  .main .text__module h2,
-  .main .text__module p {
+  .about .about__text {
+    padding-top: 20px;
+  }
+  .about .about__text h2 {
     font-size: 16px;
   }
-  .main .text__module p:last-child {
-    padding-bottom: 55px;
+  .about .about__text p:last-child {
+    padding-bottom: 40px;
   }
 }
 
-/*# sourceMappingURL=home.css.map */
+/*# sourceMappingURL=about.css.map */
