@@ -38,7 +38,7 @@ $font-main: "Source Sans 3", serif;
     .nav {
         display: flex;
         gap: 0 50px;
-        a {
+        .nav__item {
             color: #000;
             font-family: $font-main;
             font-weight: 700;

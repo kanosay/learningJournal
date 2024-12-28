@@ -1,0 +1,85 @@
+@use "style/style.scss";
+
+$font-logo: "Roboto", serif;
+$font-main: "Source Sans 3", serif;
+
+.active__item {
+    border-bottom: 2px solid #000;
+    cursor: not-allowed;
+    color: #000;
+    font-family: $font-main;
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+}
+
+.main {
+    background-color: #FAFAFA;
+    padding-top: 70px;
+    font-family: $font-main;
+    .first__module {
+        max-width: 850px;
+        margin: 0 auto;
+        h2,
+        p {
+            font-size: 16px;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            padding: 35px 0;
+        }
+        p {
+            padding-bottom: 35px;
+        }
+    }
+    .img__module {
+        display: block;
+        width: 100%;
+        
+    }
+    .text__module {
+        max-width: 850px;
+        margin: 0 auto;
+        padding-top: 40px;
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            padding-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            padding-bottom: 20px;
+            &:last-child {
+                padding-bottom: 80px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .main {
+        background-color: #fff;
+        padding-top: 30px;
+        .first__module {
+            h2 {
+                font-size: 12px;
+            }
+            h1 {
+                font-size: 32px;
+                padding: 20px 0;
+            }
+        }
+        .text__module {
+            h2,
+            p {
+                font-size: 16px;
+            }
+            p {
+                &:last-child {
+                    padding-bottom: 55px;
+                }
+            }
+        }
+    }
+}

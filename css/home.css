@@ -165,56 +165,78 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
   }
 }
-/* blog */
-.blog {
-  height: 490px;
-  max-width: 1100px;
-  background-image: url("../img/bg/blog.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-  margin: 0 auto;
+.active__item {
+  border-bottom: 2px solid #000;
+  cursor: not-allowed;
+  color: #000;
+  font-family: "Source Sans 3", serif;
+  font-weight: 700;
+  font-size: 16px;
+  position: relative;
+}
+
+.main {
+  background-color: #FAFAFA;
+  padding-top: 70px;
   font-family: "Source Sans 3", serif;
 }
-.blog .container {
-  height: 100%;
+.main .first__module {
+  max-width: 850px;
+  margin: 0 auto;
 }
-.blog .blog__inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  height: 100%;
-  gap: 20px 0;
-  color: #fff;
-}
-.blog .blog__inner h2 {
+.main .first__module h2,
+.main .first__module p {
   font-size: 16px;
 }
-.blog .blog__inner h1 {
-  font-size: 50px;
+.main .first__module h1 {
+  font-size: 36px;
   font-weight: 700;
+  padding: 35px 0;
 }
-.blog .blog__inner p {
-  max-width: 620px;
-  font-size: 20px;
+.main .first__module p {
+  padding-bottom: 35px;
+}
+.main .img__module {
+  display: block;
+  width: 100%;
+}
+.main .text__module {
+  max-width: 850px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.main .text__module h2 {
+  font-size: 24px;
+  font-weight: 700;
   padding-bottom: 20px;
+}
+.main .text__module p {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.main .text__module p:last-child {
+  padding-bottom: 80px;
 }
 
 @media only screen and (max-width: 450px) {
-  .blog {
-    height: 300px;
-    background-position: center;
-    object-fit: cover;
+  .main {
+    background-color: #fff;
+    padding-top: 30px;
   }
-  .blog .blog__inner h2 {
-    font-size: 13px;
+  .main .first__module h2 {
+    font-size: 12px;
   }
-  .blog .blog__inner h1 {
+  .main .first__module h1 {
     font-size: 32px;
+    padding: 20px 0;
   }
-  .blog .blog__inner p {
+  .main .text__module h2,
+  .main .text__module p {
     font-size: 16px;
+  }
+  .main .text__module p:last-child {
+    padding-bottom: 55px;
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=home.css.map */
