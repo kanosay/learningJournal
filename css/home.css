@@ -149,6 +149,55 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+.posts {
+  padding-top: 50px;
+  padding-bottom: 90px;
+  font-family: "Source Sans 3", serif;
+}
+.posts .post__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px 0;
+}
+.posts .post__inner .post {
+  width: 310px;
+}
+.posts .post__inner .post img {
+  width: 100%;
+  object-fit: contain;
+}
+.posts .post__inner .post h3 {
+  font-size: 14px;
+  padding-top: 15px;
+}
+.posts .post__inner .post h2 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.posts .post__inner .post p {
+  font-size: 16px;
+  color: #505050;
+}
+
+.footer {
+  max-width: 1100px;
+  background-color: #202020;
+  margin: 0 auto;
+  padding: 20px 0;
+  color: #fff;
+  font-family: "Source Sans 3", serif;
+}
+.footer .footer__inner {
+  text-align: center;
+  font-size: 12px;
+}
+.footer .footer__inner h2 {
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
 @media only screen and (max-width: 450px) {
   .header__inner .nav {
     display: none;
@@ -173,6 +222,16 @@ h1, h2, h3, h4, h5, h6 {
   .header__inner .burger {
     z-index: 5;
     display: block;
+  }
+  .posts {
+    padding-top: 30px;
+  }
+  .posts .post__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .posts .post__inner .post {
+    width: 380px;
   }
 }
 .main {
@@ -216,6 +275,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main .text__module p:last-child {
   padding-bottom: 80px;
+}
+
+.posts {
+  background-color: #FAFAFA;
 }
 
 @media only screen and (max-width: 450px) {

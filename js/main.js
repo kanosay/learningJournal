@@ -1,5 +1,7 @@
 const burgerBtn = document.getElementById('burger');
 const nav = document.querySelector('.nav');
+const timeHtml = document.querySelector('.time'); 
+const date = new Date();
 
 burgerBtn.addEventListener('click', function(){
     if (burgerBtn.classList.toggle('open')) {
@@ -10,3 +12,5 @@ burgerBtn.addEventListener('click', function(){
         nav.classList.remove('nav__active')
     }
 })
+
+timeHtml.innerHTML = date.getFullYear();
